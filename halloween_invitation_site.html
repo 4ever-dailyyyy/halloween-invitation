@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100d10">
+<title>Trick or Treat | Halloween Night</title>
+<style>
+:root{--bg:#100d10;--panel:#191316;--orange:#ff681f;--gold:#f4c99a;--muted:#c6b5aa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at top,#29202a 0%,var(--bg) 55%);color:#fff1df;font-family:Georgia,'Times New Roman',serif}
+a{color:inherit}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:32px 20px;position:relative;overflow:hidden;background:linear-gradient(#090a12b8,#100d10ed),radial-gradient(circle at 50% 18%,#7c819b 0,#252737 20%,transparent 44%)}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(120deg,transparent 0 70px,#ffffff04 71px 72px);pointer-events:none}
+.hero-inner{position:relative;max-width:800px}
+.moon{font-size:clamp(4rem,12vw,7rem);filter:drop-shadow(0 0 25px #d6c4a855);margin-bottom:4px}
+.eyebrow{letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-size:.85rem}
+h1{font-size:clamp(3.2rem,12vw,7.8rem);line-height:.88;letter-spacing:.02em;color:var(--orange);text-shadow:0 0 28px #ff5b1e38;margin:22px 0}
+h1 span{display:block;color:#f7e2c8;font-size:.34em;letter-spacing:.3em;margin-bottom:18px}
+.subtitle{font-size:clamp(1rem,3vw,1.35rem);line-height:1.6;color:#e5d6cc;max-width:560px;margin:0 auto 28px}
+.button{display:inline-block;border:1px solid var(--orange);background:var(--orange);color:#180d08;text-decoration:none;padding:14px 24px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;border-radius:3px;transition:.2s;cursor:pointer;font-family:inherit}
+.button:hover{transform:translateY(-2px);box-shadow:0 8px 28px #ff681f38}
+.button.secondary{background:transparent;color:var(--gold);border-color:#79503d}
+nav{position:absolute;top:0;left:0;right:0;display:flex;justify-content:center;gap:22px;flex-wrap:wrap;padding:20px;background:#0b090b66}
+nav a{text-decoration:none;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#ead8c7}
+nav a:hover{color:var(--orange)}
+section{padding:76px 20px;border-top:1px solid #ff681f33}
+.wrap{width:min(100%,1000px);margin:auto}
+.section-kicker{text-align:center;color:var(--orange);letter-spacing:.25em;text-transform:uppercase;font-size:.8rem}
+h2{text-align:center;font-size:clamp(2rem,6vw,3.3rem);color:var(--orange);margin:12px 0 26px}
+.intro{text-align:center;color:var(--muted);max-width:650px;line-height:1.8;margin:0 auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin-top:32px}
+.card{background:linear-gradient(145deg,#21191d,#151114);border:1px solid #583322;padding:25px 20px;text-align:center;border-radius:8px}
+.icon{font-size:2.2rem}
+.card h3{color:var(--gold);margin:12px 0 8px}
+.card p{color:var(--muted);line-height:1.6;margin:0}
+.details{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:30px}
+.detail{padding:20px;background:#21191dcc;border-left:3px solid var(--orange);line-height:1.7}
+.detail strong{display:block;color:var(--gold);margin-bottom:5px}
+.music-box{max-width:650px;margin:28px auto 0;padding:20px;background:#21191d;border:1px solid #583322;border-radius:8px;text-align:center}
+.music-box p{color:var(--muted);line-height:1.6}
+.map-card{max-width:700px;margin:30px auto 0;padding:26px;text-align:center;background:linear-gradient(145deg,#21191d,#141014);border:1px solid #583322;border-radius:8px}
+.map-icon{font-size:4rem}
+footer{text-align:center;padding:55px 20px 65px;background:linear-gradient(#100d10,#080708);border-top:1px solid #ff681f44}
+footer h2{margin-bottom:12px}
+footer p{color:var(--muted);line-height:1.8}
+.spark{color:var(--orange)}
+@media(max-width:500px){nav{gap:12px;padding:14px 8px}nav a{font-size:.68rem}.hero{padding-top:100px}}
+</style>
+</head>
+<body>
+<header class="hero" id="home">
+<nav><a href="#home">Главная</a><a href="#invite">Приглашение</a><a href="#program">Программа</a><a href="#address">Адрес</a></nav>
+<div class="hero-inner">
+<div class="moon">🌕</div>
+<div class="eyebrow">Ты приглашён(а) на одну особенную ночь</div>
+<h1><span>TRICK OR TREAT</span>HALLOWEEN</h1>
+<p class="subtitle">Готовь свой самый загадочный образ.<br>Этой ночью обычные правила не действуют… 🎃</p>
+<a class="button" href="#invite">Открыть приглашение</a>
+<p class="bats" aria-hidden="true">🦇　✦　🕸️　✦　🦇</p>
+</div>
+</header>
+<section id="invite"><div class="wrap">
+<div class="section-kicker">Запечатанное послание</div><h2>Пора праздновать!</h2>
+<p class="intro">Ты официально приглашён(а) на Halloween-вечеринку! Надевай свой самый страшно-красивый образ и приходи за атмосферой, весельем и маленькой каплей мистики.</p>
+<div class="details">
+<div class="detail"><strong>🗓 ДАТА</strong>30 октября 2026 года</div>
+<div class="detail"><strong>🕕 ВРЕМЯ</strong>18:00</div>
+<div class="detail"><strong>📍 МЕСТО</strong>«Сладкая жизнь-Fusion»</div>
+<div class="detail"><strong>🕷 ДРЕСС-КОД</strong>Страшно красиво. Чёрный, оранжевый и твой самый жуткий образ приветствуются!</div>
+</div>
+</div></section>
+<section id="program"><div class="wrap"><div class="section-kicker">Ночь полна сюрпризов</div><h2>Что тебя ждёт?</h2>
+<div class="cards">
+<div class="card"><div class="icon">🎭</div><h3>Конкурс образов</h3><p>Покажи свой самый эффектный Halloween-лук.</p></div>
+<div class="card"><div class="icon">🎃</div><h3>Игры и веселье</h3><p>Испытания, смех и немного жутких неожиданностей.</p></div>
+<div class="card"><div class="icon">🕯️</div><h3>Мрачная атмосфера</h3><p>Тайны, свечи и настроение тёмной сказки.</p></div>
+<div class="card"><div class="icon">📸</div><h3>Фото на память</h3><p>Сохраним моменты этой необычной ночи.</p></div>
+</div>
+<div class="music-box"><div class="icon">🎵</div><h3 style="color:var(--gold)">Саундтрек ночи: Lunar is here</h3><p>Нажми, чтобы открыть музыку в YouTube. Автовоспроизведение может блокироваться браузером, поэтому музыка запускается по твоему нажатию.</p>
+<a class="button secondary" href="https://youtu.be/HHGthqPjxbw?si=4aguaAueqD52bBPQ" target="_blank" rel="noopener">▶ Включить Lunar is here</a>
+</div></div></section>
+<section id="address"><div class="wrap"><div class="section-kicker">Не заблудись в тумане</div><h2>Где нас найти?</h2>
+<div class="map-card"><div class="map-icon">📍</div><h3 style="color:var(--gold);font-size:1.5rem">Сладкая жизнь-Fusion</h3><p class="intro">Открой место в 2ГИС, чтобы посмотреть расположение и построить маршрут.</p><br>
+<a class="button" href="https://2gis.kz/semey/geo/70000001051550402" target="_blank" rel="noopener">Открыть адрес в 2ГИС ↗</a>
+<p style="font-size:.85rem;margin-top:18px">Семей · 30.10.2026 · 18:00</p></div>
+</div></section>
+<footer><div class="bats">🦇　🕸️　🎃</div><h2>БУДЕТ СТРАШНО ИНТЕРЕСНО!</h2><p>Не пропусти самую загадочную ночь этой осени.<br><span class="spark">До встречи на Halloween!</span> 🖤</p><a class="button secondary" href="#home">Вернуться наверх ↑</a></footer>
+</body>
+</html>
